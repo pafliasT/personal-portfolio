@@ -1,9 +1,10 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { useState, useEffect } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import logo from "../assets/img/reshot-icon-devil-evil-ZVC5YW8LST.svg";
+import linkedIn from "../assets/img/icons8-linked-in-24.png";
+import gitHub from "../assets/img/icons8-github-24.png";
 
-import { useEffect, useState } from "react";
-function NavBar() {
+function Navigation() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,7 +22,9 @@ function NavBar() {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={""} alt="logo" />
+          <div className="logo-container">
+            <img src={logo} alt="logo" />
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon" />
@@ -61,13 +64,10 @@ function NavBar() {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="#">
-                <img src={""} alt="logo"></img>
+                <img src={linkedIn} alt="logo"></img>
               </a>
               <a href="#">
-                <img src={""} alt="logo"></img>
-              </a>
-              <a href="#">
-                <img src={""} alt="logo"></img>
+                <img src={gitHub} alt="logo"></img>
               </a>
             </div>
             <button
@@ -83,7 +83,7 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Navigation;
 
 // import NavDropdown from "react-bootstrap/NavDropdown";
 
