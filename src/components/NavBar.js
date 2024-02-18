@@ -63,10 +63,10 @@ function Navigation() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/thomaspaflias/"  target="_blank">
                 <img src={linkedIn} alt="logo"></img>
               </a>
-              <a href="#">
+              <a href="https://github.com/pafliasT"  target="_blank">
                 <img src={gitHub} alt="logo"></img>
               </a>
             </div>
