@@ -22,8 +22,8 @@ function Navigation() {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <div className="logo-container">
-            <img src={logo} alt="logo" />
+          <div className="logo-container"  style={{ filter: scrolled ? "invert(1)" : "invert(0)", top: scrolled ? "1vh" : "2vh" }}>
+            <img src={logo} alt="logo"  />
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">

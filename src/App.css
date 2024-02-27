@@ -98,8 +98,11 @@ p.danger {
 
 @media (prefers-reduced-motion: no-preference) {
   .logo-container {
-    display: inline-block;
+    position: absolute;
+    left: 15vh;
+    width: 62px;
     animation: App-logo-spin infinite 10s linear;
+    transition: top ease-in-out 200ms;
   }
 }
 
@@ -292,17 +295,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skills-container {
   margin-top: 180px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 .skill-card {
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  margin: 5px;
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+  margin: 5vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
